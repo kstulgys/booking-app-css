@@ -1,1 +1,1 @@
-# Hotel Booking App CSS
+# hotel-booking-app-css
