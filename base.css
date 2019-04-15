@@ -3,7 +3,7 @@
 * primary-light #00C2CC
 * primary-dark #7A2AE4
 *
-* grey-light-1 
+* grey-light-1
 * grey-light-2
 * grey-light-3
 * grey-light-4
@@ -14,9 +14,12 @@
 */
 
 :root {
-  --color-primary: #4173da;
-  --color-primary-light: #00c2cc;
-  --color-primary-dark: #7a2ae4;
+  --color-light: #02c0cc;
+  --color-dark: #792be4;
+
+  --color-primary: #3b7ad9;
+  --color-primary-light: #3285d7;
+  --color-primary-dark: #4969dc;
 
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -52,8 +55,8 @@ body {
   line-height: 1.6rem;
   background-image: linear-gradient(
     to bottom right,
-    var(--color-primary-light),
-    var(--color-primary-dark)
+    var(--color-light),
+    var(--color-dark)
   );
   color: var(--color-grey-dark-2);
   background-size: cover;
