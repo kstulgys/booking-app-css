@@ -14,12 +14,12 @@
 */
 
 :root {
-  --color-light: #02c0cc;
-  --color-dark: #792be4;
+  --color-light: #00c4cc;
+  --color-dark: #7d2ae8;
 
-  --color-primary: #3b7ad9;
-  --color-primary-light: #3285d7;
-  --color-primary-dark: #4969dc;
+  --color-primary: #3f77da;
+  --color-primary-light: #3286d7;
+  --color-primary-dark: #7d2ae8;
 
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;

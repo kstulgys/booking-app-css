@@ -15,7 +15,9 @@
     <title>hotel-booking-app-css</title>
   </head>
   <body>
+    <!-- CONTAINER -->
     <div class="container">
+      <!-- HEADER START -->
       <header class="header">
         <!-- <svg class="logo">
           <use xLink:href="./img/SVG/#react" />
@@ -58,7 +60,11 @@
           </div>
         </nav>
       </header>
+      <!-- HEADER END -->
+
+      <!-- CONTENT START -->
       <div class="content">
+        <!-- SIDEBAR START -->
         <nav class="sidebar">
           <ul class="side-nav">
             <li class="side-nav__item side-nav__link--active">
@@ -98,10 +104,64 @@
           </ul>
           <div class="legal">&copy: Hello World</div>
         </nav>
+        <!-- SIDEBAR END -->
+
+        <!-- HOTEL VIEW START -->
         <main class="hotel-view">
-          Hotel View
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="./img/photo-1.jpg" alt="photo" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="./img/photo-2.jpg" alt="photo" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="./img/photo-3.jpg" alt="photo" class="gallery__photo" />
+            </figure>
+          </div>
+          <!-- OVERVIEW START -->
+          <div class="overview">
+            <h1 class="overview__heading">
+              Hotel Las Palmas
+            </h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xLink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xLink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xLink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xLink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xLink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xLink:href="./img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Albufeira, Portugal</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">
+                8.7
+              </div>
+              <div class="overview__rating-count">
+                568 votes
+              </div>
+            </div>
+          </div>
         </main>
+        <!-- HOTEL VIEW END -->
+        <!-- OVERVIEW END -->
       </div>
+      <!-- CONTENT END -->
     </div>
   </body>
 </html>

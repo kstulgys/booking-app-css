@@ -40,7 +40,7 @@
 
 .side-nav__link:link,
 .side-nav__link:visited {
-  color: var(--color-grey-light-1);
+  /* color: var(--color-grey-light-3); */
   text-decoration: none;
   text-transform: uppercase;
   display: block;
@@ -49,6 +49,17 @@
   align-items: center;
   z-index: 10;
   position: relative;
+  color: currentColor;
+  transition: color 1s;
+}
+
+.side-nav__link--active .side-nav__link > * {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.side-nav__link:hover {
+  color: #ffffff;
 }
 
 .side-nav__icon {
@@ -190,4 +201,119 @@
   height: 3.75rem;
   border-radius: 50%;
   margin-right: 2rem;
+}
+
+/*
+* GALLERY
+*/
+
+.gallery {
+  display: flex;
+}
+
+.gallery__item {
+}
+
+.gallery__photo {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  display: flex;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  align-items: center;
+}
+
+.overview__heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+}
+
+.overview__stars {
+  margin-right: auto;
+  display: flex;
+}
+
+.overview__icon-star,
+.overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-primary);
+}
+
+.overview__location {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.overview__icon-location {
+  margin-right: 0.5rem;
+  animation: pulse 1s infinite;
+}
+
+.overview__rating {
+  background-color: var(--color-primary);
+  color: #fff;
+  margin-left: 3rem;
+  padding: 0 2.25rem;
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview__rating-average {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.overview__rating-count {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: -3px;
+}
+
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-inline:hover {
+  color: var(--color-grey-dark-1);
+  /* animation: pulse 1s infinite; */
+}
+
+.btn-inline:focus {
+  outline: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    /* box-shadow: none; */
+  }
+
+  50% {
+    transform: scale(1.3);
+    /* box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); */
+  }
+
+  100% {
+    transform: scale(1);
+    /* box-shadow: none; */
+  }
 }
