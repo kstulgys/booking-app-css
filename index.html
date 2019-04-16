@@ -19,10 +19,6 @@
     <div class="container">
       <!-- HEADER START -->
       <header class="header">
-        <!-- <svg class="logo">
-          <use xLink:href="./img/SVG/#react" />
-        </svg> -->
-        <!-- src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" -->
         <img src="./img/SVG/react.svg" alt="logo" class="logo" />
         <form action="" class="search">
           <input
@@ -40,23 +36,23 @@
         <nav class="user-nav">
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
-              <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+              <use xLink:href="./img/sprite.svg#icon-bookmark"></use>
             </svg>
             <span class="user-nav__notification">7</span>
           </div>
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
-              <use xlink:href="./img/sprite.svg#icon-chat"></use>
+              <use xLink:href="./img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
           </div>
           <div class="user-nav__user">
             <img
-              src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+              src="https://randomuser.me/api/portraits/women/72.jpg"
               alt="user-photo"
               class="user-nav__user-photo"
             />
-            <span class="user-nav__user-name">Richard</span>
+            <span class="user-nav__user-name">Rachel</span>
           </div>
         </nav>
       </header>
@@ -105,7 +101,6 @@
           <div class="legal">&copy: Hello World</div>
         </nav>
         <!-- SIDEBAR END -->
-
         <!-- HOTEL VIEW START -->
         <main class="hotel-view">
           <div class="gallery">
@@ -119,7 +114,6 @@
               <img src="./img/photo-3.jpg" alt="photo" class="gallery__photo" />
             </figure>
           </div>
-          <!-- OVERVIEW START -->
           <div class="overview">
             <h1 class="overview__heading">
               Hotel Las Palmas
@@ -157,9 +151,126 @@
               </div>
             </div>
           </div>
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                adipisci. Facilis dolor, ex, vitae veritatis dolore eveniet illo
+                explicabo voluptas ad consequuntur id minus et provident
+                possimus at, eaque ut.
+              </p>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                asperiores reprehenderit consectetur saepe eveniet porro, nisi
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free Wi-fi</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets friendly</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 others recommend this hotel
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt=""
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/men/66.jpg"
+                    alt=""
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/men/67.jpg"
+                    alt=""
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt=""
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laudantium, quo quasi. Facere earum debitis ipsa obcaecati
+                  eveniet alias incidunt nesciunt sequi harum quos tempore
+                  dicta, eligendi, rerum voluptatum. Veritatis, suscipit.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    class="review__photo"
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt="photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">
+                      Bob Marley
+                    </p>
+                    <p class="review__user-date">
+                      April 16th, 2019
+                    </p>
+                  </div>
+                  <div class="review__rating">
+                    7.9
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laudantium, quo quasi. Facere earum debitis ipsa obcaecati
+                  eveniet alias incidunt nesciunt sequi harum quos tempore
+                  dicta, eligendi, rerum voluptatum. Veritatis, suscipit.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    class="review__photo"
+                    src="https://randomuser.me/api/portraits/women/67.jpg"
+                    alt="photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">
+                      Bob Marley
+                    </p>
+                    <p class="review__user-date">
+                      April 16th, 2019
+                    </p>
+                  </div>
+                  <div class="review__rating">
+                    7.9
+                  </div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show All <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">
+              We have 4 free rooms for your selected dates!
+            </h2>
+            <button class="btn">
+              <span class="btn-visible">Book now</span>
+              <span class="btn-invisible">
+                Only 4 rooms left
+              </s>
+            </button>
+          </div>
         </main>
+
         <!-- HOTEL VIEW END -->
-        <!-- OVERVIEW END -->
       </div>
       <!-- CONTENT END -->
     </div>
