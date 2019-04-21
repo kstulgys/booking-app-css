@@ -4,6 +4,12 @@
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
 }
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+  }
+}
 
 .header {
   background-color: #fff;
@@ -15,9 +21,22 @@
   font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .header {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
+}
+
 .content {
-  /* background-color: var(--color-grey-dark-1); */
   display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -44,14 +63,41 @@
   border-bottom: var(--line);
 }
 
+@media only screen and (max-width: 900px) {
+  .detail {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .detail {
+    flex-direction: column;
+  }
+}
+
 .description {
-  /* align-self: baseline; */
   font-size: 1.4rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+  .description {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .description {
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {
